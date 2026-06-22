@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>게코 브리더 개인정보 처리방침</title>
+<style>
+body { font-family: -apple-system, sans-serif; max-width: 720px; margin: 40px auto; padding: 0 20px; line-height: 1.7; color: #222; }
+h1 { font-size: 1.5em; } h2 { font-size: 1.15em; margin-top: 1.8em; border-bottom: 1px solid #ddd; padding-bottom: 4px; }
+.meta { color: #666; font-size: 0.95em; }
+</style>
+</head>
+<body>
+<h1>개인정보 처리방침</h1>
+<p class="meta"><b>앱 이름:</b> 게코 브리더 (Gecko Breeder)<br>
+<b>최종 업데이트:</b> 2026-06-22<br>
+<b>문의:</b> ktg33394647@gmail.com</p>
+
+<p>게코 브리더(이하 "앱")는 이용자의 개인정보를 소중히 다룹니다. 본 방침은 앱이 어떤 정보를 어떤 목적으로 처리하는지 설명합니다.</p>
+
+<h2>1. 게스트 플레이 (기본)</h2>
+<p>앱은 로그인 없이 게스트로 바로 플레이할 수 있습니다. 게스트 상태에서 모든 게임 데이터(게코, 알, 코인, 기록 등)는 이용자 기기 내부에만 저장되며, 외부로 전송되지 않습니다.</p>
+
+<h2>2. Google 계정 연결 (선택)</h2>
+<p>이용자가 직접 "Google 계정으로 보호하기"를 선택한 경우에만 Google 로그인을 사용합니다.</p>
+<ul>
+<li><b>수집/사용 정보:</b> Google 계정 식별자(uid), 이메일 주소, 표시 이름.</li>
+<li><b>목적:</b> 클라우드 세이브 식별 및 기기 간 이어하기.</li>
+<li><b>처리 위탁:</b> Google Firebase Authentication.</li>
+</ul>
+
+<h2>3. 클라우드 세이브 (선택)</h2>
+<p>계정 연결 후 이용자가 "클라우드에 저장"을 누르면 게임 세이브가 클라우드에 저장됩니다.</p>
+<ul>
+<li><b>저장 데이터:</b> 게임 진행 데이터(게코/알/코인/도감/기록 등)와 요약 정보(앱 버전, 저장 시각, 게코 수, 코인, 대표 게코 이름, 튜토리얼 단계, 기기 모델명).</li>
+<li><b>저장 위치:</b> Google Cloud Firestore (이용자 본인 uid 문서).</li>
+<li><b>접근 권한:</b> 본인 uid 만 접근 가능(보안 규칙).</li>
+<li><b>민감정보 미수집:</b> 위치, 연락처, 사진, 통화기록 등은 수집하지 않습니다.</li>
+</ul>
+
+<h2>4. 광고 (보상형, 선택)</h2>
+<p>앱은 이용자가 보상 버튼을 직접 누른 경우에만 보상형 광고를 표시합니다. 광고가 화면에 갑자기 뜨지 않습니다.</p>
+<ul>
+<li><b>광고 제공:</b> Google AdMob.</li>
+<li><b>사용 식별자:</b> 광고 ID(AD_ID) — 광고 표시 및 빈도 제한 목적.</li>
+<li>AdMob 의 데이터 처리는 Google 광고 정책을 따릅니다: <a href="https://policies.google.com/technologies/ads">https://policies.google.com/technologies/ads</a></li>
+</ul>
+
+<h2>5. 권한</h2>
+<ul>
+<li><code>INTERNET</code>, <code>ACCESS_NETWORK_STATE</code>: 클라우드 저장/광고 로드.</li>
+<li><code>AD_ID</code>: 보상형 광고.</li>
+<li><code>SYSTEM_ALERT_WINDOW</code>(선택): "폰 위에서 같이 살기" 오버레이. 이용자가 직접 켤 때만 사용하며, 다른 앱 화면을 읽거나 분석하지 않습니다.</li>
+<li><code>POST_NOTIFICATIONS</code>, <code>FOREGROUND_SERVICE</code>: 오버레이 동작 알림.</li>
+</ul>
+
+<h2>6. 데이터 보관·삭제</h2>
+<ul>
+<li><b>로컬 데이터:</b> 앱 삭제 시 함께 삭제됩니다. 앱 내 "전체 데이터 초기화"로도 삭제할 수 있습니다.</li>
+<li><b>클라우드 데이터:</b> 로그아웃해도 클라우드 저장본은 유지됩니다. 삭제를 원하면 위 문의 이메일로 요청하시면 해당 uid 의 클라우드 세이브를 삭제합니다.</li>
+</ul>
+
+<h2>7. 아동 관련</h2>
+<p>앱은 특정 연령대를 표적하지 않습니다. 광고는 보상형이며 이용자 선택 시에만 노출됩니다.</p>
+
+<h2>8. 제3자 처리자</h2>
+<ul>
+<li>Google Firebase (Authentication, Firestore)</li>
+<li>Google AdMob (보상형 광고)</li>
+</ul>
+
+<h2>9. 변경</h2>
+<p>본 방침은 변경될 수 있으며, 변경 시 앱 또는 스토어 페이지를 통해 안내합니다.</p>
+
+<h2>10. 문의</h2>
+<p>개인정보 관련 문의/삭제 요청: ktg33394647@gmail.com</p>
+
+</body>
+</html>
